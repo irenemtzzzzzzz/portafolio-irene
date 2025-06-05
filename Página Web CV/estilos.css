@@ -1,0 +1,641 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Century Gothic", sans-serif;
+
+}
+
+@font-face {
+  font-family: 'potato';
+  src: url('Sweetie\ Potato.otf') format('truetype'); 
+}
+
+body {
+  background-color: #f2f2f2; 
+  margin: 0;
+  padding: 0;
+}
+
+ /* Menu superior */
+
+.logo {
+  float: left; 
+  margin-left: 30px; 
+  line-height: 80px;
+  font-size: 24px; 
+  color: #fff;
+}
+
+nav{
+  width: 100%;
+  height: 80px;
+  background-color: rgb(0, 0, 0);
+  line-height: 80px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 30px;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.8s all;
+}
+
+nav ul li:hover{
+  background-color: #551f40;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
+}
+
+/* FOTO DEL PRINCIPIO*/
+
+.contenedor-imagen {
+  position: relative;
+  width: 100%; 
+  max-height: 700px; 
+  overflow: hidden;
+}
+
+.contenedor-imagen img {
+  width: 2000px; 
+  height: 2000px; 
+}
+
+.texto-superpuesto h1 {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: rgb(0, 0, 0); 
+  text-align: center;
+  font-size: 100px; 
+  font-family: Arial, sans-serif; 
+
+  transform: translate(-50%, -50%) scale(0.9); 
+  font-family: "potato";
+}
+
+
+.animacion-letra {
+  animation: animacion-letra 2s ease-in-out; 
+}
+
+@keyframes animacion-letra {
+  from {
+      transform: translate(-50%, -50%) scale(0.9); 
+  }
+  to {
+      transform: translate(-50%, -50%) scale(1.1); 
+  }
+}
+
+
+/* la seccion de sobre mi */
+
+
+.sobre-mi {
+  text-align: center;
+  margin: 50px 0; 
+}
+
+.sobre-mi h2 {
+  font-size: 36px;
+  margin-bottom: 10px; 
+}
+
+.sobre-mi h3 {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 20px; 
+}
+
+.sobre-mi p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000000;
+  padding-left: 50px; 
+  padding-right: 50px; 
+}
+
+.imagenredonda {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px auto; 
+}
+
+.imagenredonda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #000000; 
+}
+
+ /* imagen fija */
+
+ .imagenfija {
+  background-image: url('OVEDND0.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.imagenfija h1,
+.imagenfija p {
+  color: white;
+}
+
+/* imagen redonda con mi foto */
+
+ .imagenredonda {
+  width: 150px;
+  height: 150px;
+
+  overflow: hidden;
+  margin: 20px auto; 
+}
+
+.imagenredonda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* aqui estan todos los estilos de los cuadrados de fotoss y el texto que está arriba */
+
+.cuadradotexto {
+  text-align: center;
+  margin-top: 50px;
+  padding-left: 50px; 
+  padding-right: 50px; 
+}
+
+.cuadradotexto h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cuadradotexto h2 {
+  font-size: 18px;
+  color: #666;
+}
+
+.iconos {
+  display: flex;
+  justify-content: center; 
+}
+
+.iconos-item {
+  flex: 50px;
+  height: 200px;
+  margin: 80px;
+  text-align: center;
+
+  overflow: hidden;
+}
+
+.iconos-item a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.iconos-item i {
+  font-size: 4em; 
+  transition: color 0.3s; 
+}
+
+.iconos-item:hover i {
+  color: #551f40; 
+}
+
+
+/* Estilos de los iconos de redes sociales */
+
+.redes {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.iconos {
+  font-size: 36px;
+}
+
+.iconos a {
+  margin: 0 50px;
+  color: #000000;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+/* TODOS LOS ESTILOS DE HABILIDADES LA DE LAS BARRITAS */
+
+.textoencima {
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+.fondo_habilidades {
+  background-image: url('ruta_de_la_imagen.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; 
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contenedor_habilidades {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+.habilidades-texto {
+  margin-bottom: 40px; 
+  margin-top: 20px;
+text-align: justify;
+}
+
+.contenedor-progreso {
+  margin-bottom: 20px;
+}
+
+.progreso {
+  height: 35px;
+  width: 100%;
+  border: 1px solid #dc7afa;
+  border-radius: 5px;
+  background-color: #ffffff;
+  overflow: hidden; 
+}
+
+.barra-progreso {
+  height: 100%;
+  background: #dc7afa;
+  border-radius: 5px;
+}
+
+.texto-barra-progreso {
+  padding: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #dc7afa;
+  border-radius: 5px 0 0 5px;
+}
+
+.barra-progreso-interna {
+  height: 100%;
+  background: #dc7afa;
+  border-radius: 5px;
+}
+
+.imagenfija2 {
+  background-image: url('OVEDND0.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px; 
+  margin-bottom: 100px; 
+}
+
+.imagenfija2 h1,
+.imagenfija2 p {
+  color: white;
+}
+
+
+/* TODOS LOS ESTILOS DE LA SECCIÓN DE EXPERIENCIA*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+.contenedor_experiencia {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+.experiencia {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.experiencia h2 {
+  color: #d504ff;
+  margin-bottom: 5px;
+}
+.experiencia .empresa {
+  font-style: italic;
+  color: #666;
+}
+.experiencia .fechas {
+  color: #999;
+}
+.experiencia .descripcion {
+  color: #444;
+}
+
+
+/* TODOS LOS ESTILOS DE LA SECCIÓN DE EDUCACIÓN*/
+
+.contenedor-educacion {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  margin-bottom: 100px; 
+}
+
+.titulo-seccion h2 {
+  color: #333333; 
+  text-align: center; 
+}
+
+.educacion-item {
+  display: flex; 
+  align-items: center; 
+  margin-top: 30px; 
+}
+
+.educacion-item img {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  margin-right: 20px; 
+}
+
+.info-educacion h3 {
+  color: #be3ee6; 
+  margin-bottom: 5px; 
+}
+
+.info-educacion p {
+  color: #555555; 
+  margin-bottom: 5px; 
+}
+
+/* TODOS LOS ESTILOS DE LA SECCIÓN DE PORTAFOLIO*/
+
+
+.titulo-izquierda {
+  color: rgb(0, 0, 0);
+  margin: 80px;
+  padding-left: 100px;
+  font-size: 100px;
+}
+
+.contenido {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.contenido img {
+  max-width: 40%;
+  margin-right: 50px;
+}
+
+.contenedor2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.texto {
+  flex: 1;
+  padding: 20px;
+}
+
+.parrafo-izquierda {
+  color: rgb(0, 0, 0);
+  margin: 80px;
+  padding-left: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 17px;
+}
+
+
+.gif {
+  width: 400px; 
+  height: 300px; 
+}
+
+.presentacion {
+  margin: 100px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.presentacion h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.presentacion p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.img-izquierda {
+  max-width: 40%;
+  margin-right: 50px;
+}
+
+
+.contenedor-fotos {
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+.imagen-portfolio {
+  max-width: 100%; 
+  height: auto; 
+}
+
+
+/* TODOS LOS ESTILOS DE LA SECCIÓN IMAGENES DE LA GALERIA*/
+
+
+
+.contenedor-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  margin-top: 100px;
+}
+
+.imagen {
+  margin: 10px;
+}
+
+.imagen img {
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+    .contenedor-fotos {
+  max-width: 800px; 
+  max-height: 800px; 
+  margin: 0 auto; 
+  margin-top: 100px;
+}
+
+.imagen-portfolio {
+  width: 100%; 
+  height: auto; 
+  display: block; 
+}
+
+/* TODOS LOS ESTILOS DE LA SECCIÓN DE CONTACTO*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+}
+
+h2 {
+  color: #000000;
+
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="submit"] {
+  background-color: #7741aa;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #ee65c5;
+}
+
+.social {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+
+
+/* TODOS LOS ESTILOS DE LA SECCIÓN DE FOOTER*/
+
+.footer {
+  background-color: #000000; 
+  color: #fff;
+  padding: 20px 0; 
+  margin-top: 100px;
+  width: 100%;
+
+
+}
+
+.container4 {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.redes-sociales a {
+  color: #fff; 
+  font-size: 20px; 
+  margin-right: 10px; 
+  text-decoration: none; 
+}
+
+.info-contacto p {
+  margin: 5px 0; 
+  
+}
